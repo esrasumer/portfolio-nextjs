@@ -40,7 +40,9 @@ const Main = () => {
               </div>
             </a>
             <Link href='/#contact'>
-              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+              <div
+                onClick={() => window.open("mailto:esrasumer28@gmail.com")}
+                className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                 <AiOutlineMail />
               </div>
             </Link>

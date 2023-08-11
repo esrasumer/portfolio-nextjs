@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-// import { useRouter } from 'next/router';
 import NavLogo from '../public/assets/navLogo.png'
 
 const Navbar = () => {
@@ -12,23 +11,6 @@ const Navbar = () => {
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState('#ecf0f3');
   const [linkColor, setLinkColor] = useState('#1f2937');
-  // const [position, setPosition] = useState('fixed')
-  // const router = useRouter();
-
-  // useEffect(() => {
-  //   if (
-  //     router.asPath === '/property' ||
-  //     router.asPath === '/crypto' ||
-  //     router.asPath === '/netflix' ||
-  //     router.asPath === '/twitch'
-  //   ) {
-  //     setNavBg('transparent');
-  //     setLinkColor('#ecf0f3');
-  //   } else {
-  //     setNavBg('#ecf0f3');
-  //     setLinkColor('#1f2937');
-  //   }
-  // }, [router]);
 
   const handleNav = () => {
     setNav(!nav);
@@ -76,16 +58,12 @@ const Navbar = () => {
               <Link href='/#skills'>Skills</Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/#projects'>Projects</Link>
-            </li>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
               <Link href='/resume'>Resume</Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
               <Link href='/#contact'>Contact</Link>
             </li>
           </ul>
-          {/* Hamburger Icon */}
           <div
             style={{ color: `${linkColor}` }}
             onClick={handleNav}
@@ -96,14 +74,11 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
-      {/* Overlay */}
       <div
         className={
           nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''
         }
       >
-        {/* Side Drawer Menu */}
         <div
           className={
             nav
@@ -150,11 +125,6 @@ const Navbar = () => {
               <Link href='/#skills'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   Skills
-                </li>
-              </Link>
-              <Link href='/#projects'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Projects
                 </li>
               </Link>
               <Link href='/resume'>
@@ -217,3 +187,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

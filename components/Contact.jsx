@@ -27,7 +27,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <h2 className='py-2'>Clint Briley</h2>
+                <h2 className='py-2'>Esra Sümer</h2>
                 <p>Front-End Developer</p>
                 <p className='py-4'>
                   I am available for freelance or full-time positions. Contact
@@ -56,14 +56,16 @@ const Contact = () => {
                     </div>
                   </a>
 
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                  <div
+                    onClick={() => window.open("mailto:esrasumer28@gmail.com")}
+                    className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                     <AiOutlineMail />
                   </div>
                   <Link href='/resume'>
-                   
-                      <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                        <BsFillPersonLinesFill />
-                      </div>
+
+                    <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                      <BsFillPersonLinesFill />
+                    </div>
                   </Link>
                 </div>
               </div>
@@ -131,12 +133,12 @@ const Contact = () => {
         </div>
         <div className='flex justify-center py-12'>
           <Link href='/'>
-              <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-                <HiOutlineChevronDoubleUp
-                  className='text-[#5651e5]'
-                  size={30}
-                />
-              </div>
+            <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+              <HiOutlineChevronDoubleUp
+                className='text-[#5651e5]'
+                size={30}
+              />
+            </div>
           </Link>
         </div>
       </div>
